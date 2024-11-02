@@ -24,14 +24,14 @@ const Sidebar: React.FC = () => {
     const pathname = usePathname();
 
     return (
-        <aside className='bg-[#000000]'>
-            <nav className='p-6'>
-                <ul className='flex flex-col gap-4'>
+        <aside className='bg-[#000000] w-auto min-h-dvh border-r border-[#171717]'>
+            <nav className='px-4 py-12'>
+                <ul className='flex flex-col gap-4 min-w-48'>
                     {navs.map((nav) => (
                         <li key={nav.title}>
                             <Link
                                 href={nav.href}
-                                className={`font-medium px-4 py-2 rounded-2xl flex items-center gap-2 group text-[#787878] hover:text-[#FFFFFF] hover:bg-[#242529] w-fit ${pathname === nav.href ? "bg-[#242529] text-[#FFFFFF]" : ""}`}
+                                className={`font-medium px-4 py-3 rounded-2xl flex items-center gap-2 group text-[#787878] hover:text-[#FFFFFF] hover:bg-[#242529] w-full ${pathname === nav.href ? "bg-[#242529] text-[#FFFFFF]" : ""}`}
                             >
                                 {nav.icon}
                                 {nav.title}

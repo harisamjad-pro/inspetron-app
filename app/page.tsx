@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div>
+    <section className="w-full bg-[#000000]">
       {/* <Image
           className="dark:invert"
           src="/next.svg"
@@ -11,6 +11,7 @@ export default function Home() {
           height={38}
           priority
         /> */}
-    </div>
+        <h1>hehehe</h1>
+    </section>
   );
 }
